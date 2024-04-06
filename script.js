@@ -52,6 +52,7 @@ async function getSongs(folder) {
             playMusic(e.querySelector(".song-name").firstElementChild.innerHTML.trim())
         })
     })
+    return songs
 }
 
 const playMusic = (track,pause=false)=>{
