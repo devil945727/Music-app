@@ -19,7 +19,7 @@ function secondsToMinutesSeconds(seconds) {
 }
 async function getSongs(folder) {
     currfolder=folder;
-    // let a = await fetch('/${folder}/`);
+   
     let a = await fetch(`/${folder}/`);
     let response = await a.text();
     // console.log(response);
@@ -53,6 +53,7 @@ async function getSongs(folder) {
             playMusic(e.querySelector(".song-name").firstElementChild.innerHTML.trim())
         })
     })
+    return songs
 }
 
 const playMusic = (track,pause=false)=>{
@@ -76,7 +77,7 @@ async function displayAlbum(){
     let array = Array.from(anchors)
     for (let index = 0; index < array.length; index++) {
         const e = array[index];
-        if(e.href.includes("/songs/")){
+        if(e.href.includes("/songs/") && !e.href.includes(".htaccess")){
             let folder= e.href.split("/").slice(-1)[0]
             //get metadata
             let a = await fetch(`/songs/${folder}/info.json`)
@@ -114,7 +115,7 @@ async function main(){
     playMusic(songs[0],true)
 
     //display album
-    displayAlbum()
+    await displayAlbum()
 
     //attach an event listner to play the song
     play.addEventListener("click",() => {
