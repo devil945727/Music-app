@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="favicon.jpeg">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded p-1 m-1">
+                <div class="logo invert">
+                    <img src="img/svg/logo.svg" alt="">
+                    <img class="close" src="img/svg/close.svg" alt="">
+                </div>
+                <ul>
+                    <li><img class="invert" src="img/svg/home.svg" alt="">Home</li>
+                    <li><img class="invert" src="img/svg/search.svg" alt="">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded p-1 m-1">
+                <div class="heading">
+                    <img class="invert" src="img/svg/library.svg" alt="">
+                    <p>Your Library</p>
+                </div>
+                <div class="song-list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right border">
+            <div class="header flex bg-black rounded">
+                <div class="nav">
+                    <img class="invert hambur" src="img/svg/hamburger.svg" alt="">
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#000000"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg class="invert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none">
+                        <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#000000"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="btn">
+                    <button class="signBtn">Sign up</button>
+                    <button class="logBtn">Log in</button>
+                </div>
+            </div>
+            <div class="song-cont">
+                <div class="song-head p-1">
+                    <h1>Spotify Playlists</h1>
+                </div>
+                <div class="card-cont cardCont flex">
+                    
+                    
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songbar">
+                        <div class="songinfo">
+                            
+                        </div>
+                        <div class="songbtn">
+                            <img id="previous" src="img/svg/previous.svg" alt="">
+                            <img id="play" src="img/svg/play.svg" alt="">
+                            <img id="next" src="img/svg/next.svg" alt="">
+                            </div>
+                            <div class="play-side">
+                                <div class="songtime">
+                                
+                                </div>
+                                <div class="volumebar">
+                                    <img class="vlmimg invert" width="25px" src="img/svg/volume.svg" alt="">
+                                    <div class="range">
+                                        <input style="cursor: pointer;" type="range" name="range">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <!-- <div class="black"></div> -->
+            </div>
+
+
+            <!-- <div class="playbar-1">
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+                <div class="songbar">
+                    <div class="songinfo">
+                        
+                    </div>
+                    <div class="songbtn">
+                        <img id="previous" src="img/svg/previous.svg" alt="">
+                        <img id="play" src="img/svg/play.svg" alt="">
+                        <img id="next" src="img/svg/next.svg" alt="">
+                        </div>
+                        <div class="play-side">
+                            <div class="songtime">
+                            
+                            </div>
+                            <div class="volumebar">
+                                <img class="invert" width="25px" src="img/svg/volume.svg" alt="">
+                                <div class="range">
+                                    <input style="cursor: pointer;" type="range" name="range">
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div> -->
+
+
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
