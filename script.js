@@ -44,7 +44,7 @@ async function getSongs(folder) {
                                 <div>Harry</div>
                             </div>
                             <div class="play-now">
-                                <span>Play Now</span>
+                                
                                 <img class="invert" src="img/svg/play.svg" alt="">
                             </div> </li>`;
     }
@@ -186,7 +186,7 @@ async function main() {
         console.log("Setting volume to", e.target.value, "/ 100")
         currentSong.volume = parseInt(e.target.value) / 100
         if (currentSong.volume > 0) {
-            document.querySelector(".volume>img").src = document.querySelector(".volume>img").src.replace("mute.svg", "volume.svg")
+            document.querySelector(".vlmimg").src = document.querySelector(".vlmimg").src.replace("mute.svg", "volume.svg")
         }
     })
 
